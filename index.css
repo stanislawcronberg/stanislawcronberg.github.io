@@ -33,8 +33,9 @@ body {
 }
 
 .name {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
+    font-family: monospace;
     margin: 0 0 1rem;
     line-height: 1.2;
 }
@@ -107,8 +108,9 @@ body {
 /* Content Section */
 h2 {
     font-size: 1.75rem;
+    font-family: monospace;
     color: var(--text-color);
-    margin: 2rem 0 1.5rem;
+    margin: 0rem 0 1.5rem;
 }
 
 /* Blog Posts List */
@@ -141,17 +143,65 @@ a:hover {
 }
 
 /* Blog Post Content */
+.back-nav {
+    margin-bottom: 2rem;
+    font-family: monospace;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--muted-color);
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+}
+
+.back-link:hover {
+    color: var(--link-color);
+}
+
+.back-link svg {
+    flex-shrink: 0;
+    transition: transform var(--transition-speed) ease;
+}
+
+.back-link:hover svg {
+    transform: translateX(-2px);
+}
+
+
 .post-content {
     font-size: 1.1rem;
     line-height: 1.8;
 }
 
 .post-header {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .post-title {
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: monospace;
+    margin: 0 0 1rem;
+    line-height: 1.2;
+}
+
+.post-date {
+    color: var(--muted-color);
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    .back-nav {
+        margin-bottom: 1.5rem;
+    }
+    
+    .post-title {
+        font-size: 2rem;
+    }
 }
 
 hr {
