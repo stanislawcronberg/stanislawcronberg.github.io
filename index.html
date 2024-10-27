@@ -3,39 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stas's Site</title>
+    <title>SJC</title>
     <link rel="stylesheet" href="index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="assets/favicons/site.webmanifest">
 </head>
-<body>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">home</a></li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="about.html">about</a></li>
-        </ul>
-    </nav>
 
+<body>
+    
     <div class="container">
-        <header class="profile-header">
-            <div class="profile-info">
-                <img src="assets/images/me.png" alt="Staś" class="profile-image">
-                <div class="profile-text">
-                    <h1>Hi, I'm Staś!</h1>
-                    <div class="role">ML Engineer</div>
+        <header class="site-header">
+            <h1 class="name">stanisław johannes cronberg</h1>
+            <div class="header-content">
+                <p class="role">machine learning engineer</p>
+                <div class="header-meta">
                     <div class="location">
-                        <svg class="location-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                             <circle cx="12" cy="10" r="3"></circle>
                         </svg>
-                        Warsaw, Poland
+                        <span>warsaw, poland</span>
                     </div>
+                    <nav class="social-links" aria-label="Social links">
+                        <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="mailto:your@email.com" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </nav>
                 </div>
             </div>
         </header>
+    </div>
+
+    <div class="container">
+        <main>
+            <h2>recent posts</h2>
+            <ul class="post-list">
+                <li>
+                    <span class="post-date">2024-10-26 •</span>
+                    <a href="posts/01-why-write.html">writing and why i decided to start</a>
+                </li>
+            </ul>
+        </main>
     </div>
 </body>
 </html>
