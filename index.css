@@ -192,25 +192,6 @@ footer {
     }
 }
 
-.wave {
-    display: inline-block;
-    transform-origin: 70% 70%;
-}
-
-.wave:hover {
-    animation: wave 2.5s;
-}
-
-@keyframes wave {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(14deg); }
-    20% { transform: rotate(-8deg); }
-    30% { transform: rotate(14deg); }
-    40% { transform: rotate(-4deg); }
-    50% { transform: rotate(10deg); }
-    60% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
-}
 
 /* Simple fade in for all content */
 .container {
@@ -257,11 +238,11 @@ header .subtitle {
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 0px;
     object-fit: cover;
-    border: 2px solid var(--date-color);
+    //border: 2px solid var(--date-color);
     filter: grayscale(50%);
     transition: transform 0.3s ease;
 }
