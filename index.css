@@ -1,10 +1,13 @@
 /* Variables */
 :root {
-    --bg-color: #1a1a1a;
-    --text-color: #e0e0e0;
+    //--bg-color: #1a1a1a;
+    --bg-color: #121212;
+    //--text-color: #e0e0e0;
+    --text-color: #E4E4E7;
     --link-color: #7eb8ff;
     --hover-color: #afd2ff;
-    --muted-color: #888;
+    //--muted-color: #888;
+    --muted-color: #A1A1AA;
     --border-color: #333;
     --transition-speed: 0.2s;
 }
@@ -192,6 +195,50 @@ a:hover {
     color: var(--muted-color);
     font-family: monospace;
     font-size: 0.95rem;
+}
+
+.post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Add spacing between paragraphs */
+.post-content p {
+    margin: 0 0 1.5rem 0; /* Adds good spacing after each paragraph */
+}
+
+/* Style the last paragraph to remove bottom margin */
+.post-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional: Add special spacing for consecutive paragraphs */
+.post-content p + p {
+    margin-top: 3rem;
+}
+
+/* Optional: If you have any headings within the post content */
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+    margin: 2.5rem 0 1rem 0;
+}
+
+/* Optional: Add spacing for lists within the content */
+.post-content ul,
+.post-content ol {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .post-content {
+        font-size: 1rem;
+    }
+    
+    .post-content p {
+        margin-bottom: 1.25rem; /* Slightly less spacing on mobile */
+    }
 }
 
 @media (max-width: 600px) {
