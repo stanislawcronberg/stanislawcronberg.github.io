@@ -1,12 +1,9 @@
 /* Variables */
 :root {
-    //--bg-color: #1a1a1a;
     --bg-color: #121212;
-    //--text-color: #e0e0e0;
     --text-color: #E4E4E7;
     --link-color: #FFA07A;
     --hover-color: #FFB499;
-    //--muted-color: #888;
     --muted-color: #A1A1AA;
     --border-color: #333;
     --transition-speed: 0.2s;
