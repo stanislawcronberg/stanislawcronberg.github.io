@@ -19,6 +19,7 @@ html, body {
 /* Reset and Base Styles */
 body {
     color: var(--text-color);
+    min-height: -webkit-fill-available;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
 }
