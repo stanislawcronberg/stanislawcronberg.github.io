@@ -125,14 +125,36 @@ h2 {
 }
 
 .post-list li {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-list a {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
 }
 
 .post-date {
     color: var(--muted-color);
     font-family: monospace;
-    margin-right: 1rem;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+    .post-list li {
+        margin-bottom: 1.75rem;
+    }
+    
+    .post-list a {
+        font-size: 1rem;
+    }
+    
+    .post-date {
+        font-size: 0.85rem;
+        display: block;
+        margin-top: 0.25rem;
+    }
 }
 
 /* Links */
